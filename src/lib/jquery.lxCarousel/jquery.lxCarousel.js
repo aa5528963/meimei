@@ -94,7 +94,7 @@
 					if(this.opt.type === 'vertical'){
 						target.top = -this.index*this.opt.height;
 					}else if(this.opt.type === 'horizontal'){
-						target.left = -this.index*this.opt.width;
+						target.left = -this.index*1200;
 					}
 					$self.find('ul').animate(target);
 				},

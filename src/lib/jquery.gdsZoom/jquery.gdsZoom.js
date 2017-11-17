@@ -55,6 +55,8 @@
 				},
 				show:function(){
 					// 写入图片地址
+					
+					  
 					this.$bigImg.attr('src',this.$smallImg.attr('data-big'));
 					this.$big.append(this.$bigImg);
 					this.$big.appendTo('body');
