@@ -1,4 +1,89 @@
 
+#header{
+    background: #333333;
+    position:relative;
+    height: 90px;
+    .top1{
+            float:left;
+            color: #D7D7D7;
+            line-height: 34px;
+            height: 34px;
+            font-size:12px;
+            li{
+                float:left;
+                padding: 0 5px;
+                &:nth-child(2){
+                    padding-left:16px;
+                    i{
+                        display:inline-block;
+                        width: 16px;
+                        height: 17px;
+                        background:url(../img/1.fw.png) no-repeat 0 0;
+                    }
+            }
+                &:nth-child(3){
+                    padding-left:15px;
+                    i{
+                        display:inline-block;
+                        width: 15px;
+                        height: 15px;
+                        background:url(../img/1.fw.png) no-repeat -33px 0;
+                    }
+                }
+            }
+
+    }
+    input{
+        float:right;
+        display: inline;
+        height: 26px;
+        line-height: 26px;
+        margin-top: 10px;
+        padding: 0 34px 0 8px;
+        color: #787878;
+        border: 1px solid #787878;
+        background: #333;
+        font-size: 12px;
+        width: 219px;
+    }
+    .logo{
+        position:absolute;
+        left:484px;
+        top:10px;
+    }
+    .top2{
+        display:block;
+        position:absolute;
+        left:283px;
+        top:44px;
+        li{
+          float:left;
+          padding: 12px 15px 10px;
+          margin: 0 6px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 15px;                  
+             &:hover{
+                    border-bottom: 2px solid #727071;
+                    a{
+                        color: #bfbfbf;
+                        
+                        }
+                
+                
+                
+               
+
+                
+            }
+        }
+    }
+
+        
+    
+
+}
+
 #main{
     width: 1000px;
     margin: 0 auto;
@@ -60,6 +145,13 @@
                             height: 98px;
                             border: 1px solid #E0E0E0;
                             margin-right: 8px;
+
+                            &:first-child .small{
+                                    display:inline-block;
+                                    width: 73px;
+                                    height: 98px;
+
+                            }
                         }
 
 
@@ -302,6 +394,37 @@
                                 width: 440px;
                                 line-height: 23px;
                                 color:black;
+                        }
+
+                        .title35{
+                                height: 38px;
+                                clear: both;
+                                position: relative;
+                                z-index: 1;
+    /* width: 380px; */
+                                padding: 20px 0 15px;
+
+                                a{
+                                    background: url(../img/goods.gif) no-repeat 0 -884px;
+                                    height: 36px;
+                                    width: 153px;
+                                    display: block;
+                                    float: left;
+                                    position: relative;
+                                    margin-right: 15px;
+                                }
+
+                                .car{
+                                    background: url(../img/goods.gif) no-repeat 0 -884px;
+                                    height: 36px;
+                                    width: 153px;
+                                    display: block;
+                                    float: left;
+                                    position: relative;
+                                    margin-right: 15px;
+                                }
+
+
                         }
                 }
             }
@@ -547,4 +670,38 @@
 
 .liang{
     border:2px solid rgb(255, 103, 1);
+}
+
+// .small{
+//     display:inline-block;
+//     width: 73px;
+//     height: 98px;
+
+// }
+.buycar{
+     
+    a{
+            background: url(../img/buycar.jpg) no-repeat 0 -57px;
+            width: 69px;
+            height: 56px;
+             position:absolute;
+            top:500px;
+            right:100px;
+        
+
+
+
+        }
+}
+
+#footer{
+        position:relative;
+        div{
+            width: 300px;
+            height: 200px;
+            background:#F2F2F2;
+            position:absolute;
+            top:1px;
+            right:10px;
+        }
 }

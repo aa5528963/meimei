@@ -5,7 +5,7 @@
     }
 
     $con->set_charset('utf8');
-    $sql = "select * from da";
+    $sql = "select * from data1";
     $result = $con->query($sql);
     $row = $result->fetch_all(MYSQLI_ASSOC);
     

@@ -246,3 +246,92 @@ p {
   padding: 0 0 20px 450px;
   text-align: center;
 }
+
+.home2 ul {
+  overflow: hidden;
+  margin: 0 0 40px;
+  width: 1210px;
+}
+
+.home2 ul li {
+  float: left;
+  width: 397px;
+  margin: 0 4px 15px 0;
+}
+
+.home2 ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #fff;
+  line-height: 0;
+}
+
+.home3 {
+  background: #fff;
+}
+
+.home3 h3 {
+  padding: 0 0 20px 450px;
+  text-align: center;
+}
+
+.home3 ul {
+  overflow: hidden;
+  margin: 0 0 40px;
+  width: 1200px;
+}
+
+.home3 ul li {
+  float: left;
+  width: 600px;
+  margin: 0 0 40px;
+}
+
+.home3 ul li img {
+  display: inline-block;
+  width: 600px;
+  height: 300px;
+}
+
+.home4 {
+  background: #fff;
+}
+
+.home4 h3 {
+  padding: 0 0 20px 450px;
+  text-align: center;
+}
+
+.home4 ul {
+  width: 1217px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.home4 ul li {
+  float: left;
+  width: 287px;
+  margin: 0 17px 20px 0;
+}
+
+.home4 ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#footer {
+  position: relative;
+}
+
+#footer div {
+  width: 300px;
+  height: 200px;
+  background: #F2F2F2;
+  position: absolute;
+  top: 1px;
+  right: 10px;
+}

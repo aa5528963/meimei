@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-13 12:13:20
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-17 14:54:07
+* @Last Modified time: 2017-11-20 15:51:40
 */
 
 jQuery(function($){
@@ -83,6 +83,63 @@ jQuery(function($){
             })
 
 
+    let xhr = new XMLHttpRequest();
+    
+    xhr.onreadystatechange = function(){
+            if(xhr.readyState === 4){
+                var res = JSON.parse(xhr.responseText);
+
+                console.log('ajax completed:' + res);
+
+                var $data = $('<ul/>');
+
+                var $data1 = $.map(res,function(item,idx){
+                    return `<li><a href="html/list.html"><img src="${item.imgurl}"></a></li>`
+                }).join('');
+
+                console.log($data1);
+                $data.append($data1);
+                $('.home2').append($data);
+
+                var $data2 = $('<ul/>');
+
+                for(var i=0;i<6;i++){
+                    var $data3 = $('<li/>');
+                    var $data4 = $('<img/>');
+                   $data4.attr('src',res[i].imgurl)
+                   console.log(res[i].imgurl);
+                    $data3.append($data4);
+                    $data2.append($data3);
+                }
+                $('.home3').append($data2);
+            }
+        }
+
+
+
+    xhr.open('get','api/index.php',true);
+    xhr.send();
+
+
+    $.ajax({
+          // D:\1706\superiorHui\src\api
+            url:'api/index1.php',
+            success:function(data){
+                var res = JSON.parse(data);
+                console.log(res);
+                var $s = $('<ul/>');
+              var $p= $.map(res,function(item,idx){
+                    // console.log(item,idx)
+                    return `<li><a href="html/list.html" ><img src="${item.imgurl}"></a></li>`
+                }).join('');   
+                $s.append($p);
+              console.log($p);
+               $('.home4').append($s);
+            }
+        })
+
+    
+    
 
     function tu(num,dom){
         var $ul = $('<ul/>');
