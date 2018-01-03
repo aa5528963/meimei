@@ -1,0 +1,191 @@
+#header {
+  background-color: #ff5073;
+}
+
+#header .header_h {
+  height: 30px;
+  margin: auto;
+  line-height: 30px;
+  position: relative;
+  color: #fff;
+  font-size: 12px;
+}
+
+#header .header_h div {
+  float: left;
+  padding-left: 18px;
+  position: relative;
+}
+
+#header .header_h div i {
+  width: 18px;
+  height: 18px;
+  background: url(../img/h1.png) no-repeat 0 -16px;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+#header .header_h ul {
+  float: right;
+}
+
+#header .header_h ul li {
+  float: left;
+  margin-right: 16px;
+}
+
+#header .header_h ul li:nth-child(4) {
+  position: relative;
+  padding-left: 18px;
+}
+
+#header .header_h ul li:nth-child(4) i {
+  width: 18px;
+  height: 18px;
+  background: url(../img/h1.png) no-repeat 0 -37px;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+#header .header_h ul li:nth-child(5) {
+  position: relative;
+  padding-left: 18px;
+}
+
+#header .header_h ul li:nth-child(5) i {
+  width: 18px;
+  height: 18px;
+  background: url(../img/h1.png) no-repeat 0 -57px;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+#header .header_h ul li a {
+  color: #fff;
+}
+
+.header_m {
+  padding: 20px 0;
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+.header_m .header_m1 {
+  width: 24.33%;
+  margin: 10px 0;
+  float: left;
+}
+
+.header_m .header_m2 {
+  float: left;
+  margin-left: 60px;
+  margin-top: 6px;
+  border: 1px solid #ff5073;
+  width: 420px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 150px;
+}
+
+.header_m .header_m2 input {
+  font-size: 18px;
+  width: 330px;
+  float: left;
+  border: none;
+  height: 30px;
+  line-height: 36px;
+  margin-left: 18px;
+}
+
+.header_m .header_m2 button {
+  width: 40px;
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  font-size: 16px;
+  float: left;
+  height: 30px;
+  border: none;
+  right: 12px;
+}
+
+.header_m .header_m2 button span {
+  width: 40px;
+  height: 22px;
+  display: inline-block;
+  margin-top: 6px;
+  background: url(../img/h1.png) no-repeat 10px -88px;
+}
+
+.header_m .header_m3 {
+  width: 256px;
+  position: absolute;
+  height: 105px;
+  padding-left: 102px;
+  background: url(../img/h1.png) no-repeat 0 -192px;
+  top: -20px;
+  right: 30px;
+}
+
+.header_m .header_m3 i {
+  background: url(../img/h2.png) no-repeat 0 0;
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  position: absolute;
+  background-size: cover;
+}
+
+#nav {
+  border-top: 1px solid #ccc;
+}
+
+#nav ul {
+  background: #fff;
+  height: 45px;
+  font-size: 16px;
+}
+
+#nav ul li {
+  float: left;
+  padding: 15px 18px 0 18px;
+}
+
+#nav ul li a {
+  color: black;
+}
+
+#nav ul li a:hover {
+  color: #ff5073;
+}
+
+#nav ul li:nth-child(1) {
+  background: #f2f2f2;
+  padding: 0 24px 0 10px;
+  line-height: 24px;
+  padding-top: 15px;
+}
+
+#nav ul li:nth-child(1) a {
+  padding: 0 20px;
+  color: black;
+  position: relative;
+}
+
+#nav ul li:nth-child(1) a i {
+  width: 18px;
+  height: 14px;
+  background: url(../img/h3.png);
+  position: absolute;
+  top: 5px;
+  left: 0;
+}

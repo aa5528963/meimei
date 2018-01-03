@@ -1,123 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/base.css" />
-	<link rel="stylesheet" type="text/css" href="css/home.css" />
-	<!-- <link rel="stylesheet" type="text/css" href="lib/jquery.lxCarousel/jquery.lxCarousel.css" /> -->
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/head.css" />
+        <style type="text/css">
+            
+            .banner { 
+                 position: relative; 
+                  height: 642px;
 
-	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="lib/jquery.lxCarousel/jquery.lxCarousel.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-</head>
-<body>
-	<div id="box">
-		<header id="header">
-			<div class="container clearfix">
-			<ul class="top1">
-				<li><a href="html/denglu.html"><i></i>注册/登录</a></li>
-				<li><a href="#"><i style="background-position:0 0"></i>购物袋0件</a></li>
-				<li><a href="#">我的走秀<i></i></a></li>
-			</ul>
-			<label for="in"></label><input type="text" id="in" placeholder="请搜索Alexander McQueen试试"/>
-			<div class="logo">
-				<a href="#">
-					<img src="img/1.png" height="31" width="219" alt="" />
-				</a>
-			</div>
-			<ul class="top2 clearfix">
-				<li><a href="#">首页</a></li>
-				<li><a href="#">新品</a></li>
-				<li><a href="#">男士</a></li>
-				<li><a href="#">女士</a></li>
-				<li><a href="#">品牌</a></li>
-				<li><a href="#">发现</a></li>
-				<li><a href="#">专题</a></li>
-				<li><a href="#">手机走秀</a></li>
-			</ul>
-			</div>
-		</header>
-	
-		<nav id="nav">
-		
-		</nav>	
-	
-	<div id="banner">
-		<div style="background:url(img/bg1.jpg) no-repeat center top; height:143px;"></div>
-		<div style="background:url(img/bg2.jpg) no-repeat center top; height:143px;"></div>
-		<div style="background:url(img/bg3.jpg) no-repeat center top; height:143px;"></div>
-		<div style="background:url(img/bg4.jpg) no-repeat center top; height:143px;"></div>
-		<div style="background:url(img/bg5.jpg) no-repeat center top; height:143px;"></div>
-		<div style="background:url(img/bg6.jpg) no-repeat center top; height:143px;"></div>
-		<div style="background:url(img/bg7.jpg) no-repeat center top; height:143px;"></div>
-		<div style="background:url(img/bg8.jpg) no-repeat center top; height:143px;"></div>
-		<div style="background:url(img/bg9.jpg) no-repeat center top; height:143px;"></div>
+              }
+             .banner li {
+                   list-style: none; 
+             }
+              .banner ul li {
+                   float: left; 
+             }
+        </style>
 
-	</div>
-	<div class="container">
-		<div id="wrap">
-			<div class="enterwrap">
-				<div><a href=""><img src="img/e1.jpg" height="400" width="1152" alt="" /></a></div>
-				<div><a href=""><img src="img/e2.jpg" alt="" /></a></div>
-				<ul class="clearfix">
-					<li><a href=""><img src="img/e3.jpg"  /></a></li>
-					<li><a href=""><img src="img/e4.jpg" alt="" /></a></li>
-				</ul>
-			</div>
-			<!-- <div class="goodwrap">
-				<h2><img src="img/t1.png" height="140" width="1071" alt="" /></h2>
-				<h3><img src="img/t2.jpg" height="40" width="228" alt="" /></h3>
-				<div class="top_1">
-					
-				</div>
-			</div> -->
-			<div id="lun">
-		
-			</div>
+        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/unslider.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            jQuery(function($){
+            $('#header').load('html/head.html #header');
+            $('#header_m').load('html/head.html .header_m');
+            $('#nav').load('html/head.html #nav');
 
-			
+            
+            });
 
-	</div>
-	
-	
-		
-	
-	</div>
-	<div class="container">
-		<div class="home">
-				<ul>
-					<li></li>
-					<li style="background-position:-250px 0"></li>
-					<li style="background-position:-500px 0"></li>
-					<li style="background-position:-750px 0"></li>
-				</ul>
-			</div>
-		<div class="home1">
-			<h3><img src="img/z3.jpg" height="40" width="301" alt="" /></h3>
-			<ul>
-				<li><img src="img/z1.jpg" height="300" width="600" alt="" /></li>
-				<li><img src="img/z2.jpg" height="300" width="600" alt="" /></li>
-			</ul>
-		</div>
-		<div class="home2">
-			<h3><img src="img/z4.jpg" alt="" /></h3>
-		</div>
-		<div class="home3">
-			<h3><img src="img/z5.jpg" alt="" /></h3>
-		</div>
-		<div class="home4">
-			<h3><img src="img/z6.jpg" alt="" /></h3>
-		</div>
-	</div>
-	
-	<footer id="footer">
-		<img src="img/i5.png" height="321" width="1280" alt="" />
-		<div></div>
-	</footer>
+        </script>
+        <script type="text/javascript">
+                $(function() {
+                   var slidey = $('.banner').unslider({
+                     speed: 500,               
+                   delay: 3000,            
+                   complete: function() {}, 
+                   keys: true,             
+                   dots: true,              
+                   fluid: false
+                 });
+                  data = slidey.data('unslider'); 
+                  data.move(2, function() {}); 
+                });
+        </script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="header_m"></div>
+        <div id="nav">  </div>
+        <div class="banner">
+          <ul>
+          <li style="width:100%;height:480px;">
+                <h1><img src="img/i4.jpg" height="480" width="1300" alt="" /></h1>
+          </li>
+          <li style="width:100%;height:480px;">
+                <h1><img src="img/i2.jpg" height="480" width="1300" alt="" /></h1>
+          </li>
+          <li style="width:100%;height:480px;">
+                <h1><img src="img/i3.jpg" height="480" width="1300" alt="" /></h1>
+          </li>
+          <li style="width:100%;height:480px;">
+                <h1><img src="img/i5.jpg" height="480" width="1300" alt="" /></h1>
+          </li>
+          </ul>
+        </div>
+        <div id="guess">
+            <div class="container">
+                 <div class="guess_h clearfix">
+                    <h3>猜你所爱</h3>
+                    <span>爱你所爱，为你寻觅世间好物</span>
+                 </div>
+                 <div class="guess_m">
+                     <div class="button_l"></div>
+                     <div class="button_r"></div>
+                 </div>
+                 <div class="guess_f">
+                     
+                 </div>
+            </div>
+           
+        </div>
 
-	
-	
-</body>
-</html>  
+
+
+    </body>
+</html>

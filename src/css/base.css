@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-13 09:08:45
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-11-13 16:45:50
+* @Last Modified time: 2018-01-03 10:39:33
 */
 html,body{height: 100%;}
 body,h1,h2,h3,h4,h5,p,a,input,img,ul,li,ol,dl,dt,dd{
@@ -19,14 +19,9 @@ input{
     outline:none;}
 a{
     text-decoration:none;
-    color:#D7D7D7;
+    
 }
-.container{
-    width:983px;
-    min-width:983px;
-    margin:0 auto;
-    position:relative;
-}
+
 .clearfix:after{
     content:"";
     display:block;
@@ -47,8 +42,8 @@ header,footer,section,nav,main,aside,article{
     display:block;
 }
 .container{
-    width:1200px;
-    min-width:1200px;
+    width:1172px;
+   
     margin:0 auto;
     position:relative;
     
@@ -56,4 +51,12 @@ header,footer,section,nav,main,aside,article{
 
 #box{
     background: #C23D36;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h3,h4{
+    font-weight: normal;
 }
