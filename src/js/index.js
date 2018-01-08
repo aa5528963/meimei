@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-01-02 16:46:46
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-03 13:56:11
+* @Last Modified time: 2018-01-06 12:09:26
 */
 
 jQuery(function($){
@@ -16,6 +16,7 @@ jQuery(function($){
                 console.log(res);
 
               var $s = $('<ul/>');
+              $s.addClass('pink');
               var $p= $.map(res,function(item,idx){
                     // console.log(item,idx)
                     return `<li><a href="html/list.html" >
@@ -31,6 +32,23 @@ jQuery(function($){
                 $s.append($p);
                 
                $('.guess_m').append($s);
+            var r = 0;
+               $('.button_r').on('click',function(){
+                    
+                    r-=293;
+                    if(r <=-2344){
+                        r=-293;
+                    }
+                    $('.pink').animate({left:r});
+
+               })
+
+               $('.button_l').on('click',function(){
+                    r+=293;
+
+                    $('.pink').animate({left:r});
+
+               })
             }
         })
 

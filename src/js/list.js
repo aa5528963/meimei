@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-01-03 15:52:45
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-03 19:38:55
+* @Last Modified time: 2018-01-03 21:05:16
 */
 
 jQuery(function($){
@@ -22,6 +22,17 @@ jQuery(function($){
                             gener(res);
 
 
+                         var page_len = Math.ceil(row.total/qty);
+                         var $div = $('<div/>')
+                         $div.addClass('page');
+
+                         for(var i=0;i<page_len;i++){
+                              var $span = $('<span/>');
+                              $span.text(i+1);
+                              
+                              $div.append($span);
+                         }
+                         $('.main_m').append($div);
 
                         $('.main_m').on('click','img',function(e){
                             var target = e.target;
@@ -31,6 +42,27 @@ jQuery(function($){
                                         //通过地址传id
                             location.href = './detail.html' + params;
                         })
+
+                         $('.page').on('click','span',function(e){
+                                var target = e.target;
+                                pageNo = target.innerText*1;
+                                
+
+                                $(this).addClass('active1').siblings('span').removeClass('active1');
+                                $.ajax({
+                                    url:'../api/list.php',
+                                    data:{'pageNo':pageNo,'qty':qty},
+                                    type:'get',
+                                    success:function(data){
+                                            var row = JSON.parse(data);
+                                            var res = row.data;
+                                            $('.list').html('');
+                                             gener(res);
+
+                                    }
+                                })
+
+                         })
                         
                     }
 
@@ -49,6 +81,9 @@ jQuery(function($){
 
     function gener(res){
         var $s = $('<ul/>');
+               $s.addClass('clearfix') ;
+               $s.addClass('list') ;
+
               var $p= $.map(res,function(item,idx){
                     // console.log(item,idx)
                     return `<li><a href="#" >

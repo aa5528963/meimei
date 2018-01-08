@@ -27,6 +27,7 @@
 }
 
 #guess .guess_m ul {
+  position: absolute;
   width: 200%;
 }
 
@@ -169,4 +170,8 @@
   position: absolute;
   right: 0px;
   font: 20px/61px Tahoma, Helvetica, Arial, "Microsoft Yahei", 微软雅黑, STXihei, 华文细黑;
+}
+
+#guess .guess_f ul li:hover {
+  border-shadow: 1px 1px 2px yellow,-1px -1px 2px yellow;
 }

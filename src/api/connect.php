@@ -14,7 +14,7 @@
     if($conn->connect_errno){
         die('连接失败'.$conn->connect_error);
     }
-    var_dump(666);
+    
     // 设置编码
     $conn->set_charset('utf8');
 

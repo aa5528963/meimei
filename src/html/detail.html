@@ -6,17 +6,41 @@
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/head.css" />
     <link rel="stylesheet" type="text/css" href="../css/detail.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../lib/jquery-gdsZoom/jquery.gdsZoom.css">
+    <style>
+        /*body{padding-left:600px;}*/
+        .smallList img{width:100px;float:left;}
+        .smallList img:hover{border:1px solid #999;}
+        .gds-zoom-big img{min-width: 1000px;}
+        .big1{width: 500px;height: 500px;}
+        .gds-zoom{width: 500px;height: 500px;border:1px solid #eee;}
+    </style>
     <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="../js/detail.js"></script>
+    <script src="../lib/jquery-gdsZoom/jquery.gdsZoom.js"></script>
     <script type="text/javascript">
             jQuery(function($){
             $('#header').load('head1.html #header');
             $('#header_m').load('head1.html .header_m');
             $('#nav').load('head1.html #nav');
+            $('#footer').load('head1.html #footer');
 
             
             });
 
+    </script>
+    <script>
+        $(function(){
+            $('.goods').gdsZoom();
+
+            $('.smallList img').click(function(){
+                $('.goods img').attr({
+                    'src':this.src,
+                    'data-big':$(this).attr('data-big') || this.src
+                });
+            })
+        });
     </script>
 
 </head>
@@ -24,5 +48,130 @@
     <div id="header"></div>
     <div id="header_m"></div>
     <div id="nav">  </div>
+    <div class="main clearfix" >
+        <div class="container">
+            <div class="main_h clearfix">
+                <div class="goods">
+                        <img src="../img/car_min.png" data-big="../img/car.jpg" class="big1">
+                </div>
+                 <div class="smallList">
+                        <img src="../img/l11.jpg" data-big="../img/l11.jpg" class="big2">
+                        <img src="../img/l12.jpg" alt="">
+                        <img src="../img/l13.jpg" alt="">
+                        <img src="../img/l14.jpg" alt="">
+                        <img src="../img/l15.jpg" alt="">
+                 </div>
+            </div>
+            <div class="main_m clearfix">
+                <h1 class="tit"></h1>
+                <div class="short">AHC第四代B5玻尿酸三部曲面膜5片~把每一颗营养因子都准确的注入到皮肤细胞中！多个水分子一针锁入肌肤。肌肤告别“干”尬常态！</div>
+                <div class="product">
+                    <div class="pro1">价格<span class="price1"></span></div>
+                    <div class="pro2">促销价<span class="price2"></span><span class="size">7.7折</span></div>
+                </div>
+                <div class="same">
+                    <i></i>
+                    <span class="same1">最高可返<span>登录后查看</span>蜜豆</span>
+                </div>
+                <div class="ship">
+                    邮费<span>满99元包邮</span>
+                </div>
+                <div class="qty">
+                    <label for="">数量</label>
+                    <button type="button" class="q1">-</button>
+                    <input type="text" value="1" class="nub" />
+                    <button class="q2">+</button>
+                    <p>库存：<span>有货</span></p>
+                </div> 
+                <div class="button">
+                    <span class="button1">加入收藏</span>
+                   
+                        <span class="button2">加入购物车</span>
+                   
+                </div>   
+
+            </div>
+           
+           
+        </div>
+       
+    </div>
+     <div class="car">
+        <div class="container">
+             <ul>
+                    <li>
+                        <div class="logo"></div>
+                        <div class="logo_h">韩国直采</div>
+                    </li>
+                    <li>
+                        <div class="logo"></div>
+                        <div class="logo_h">超值低价</div>
+                    </li>
+                    <li>
+                        <div class="logo"></div>
+                        <div class="logo_h">极速发货</div>
+                    </li>
+                    <li>
+                        <div class="logo"></div>
+                        <div class="logo_h">7天包退</div>
+                    </li>
+             </ul>
+        </div>
+     </div>
+     <div class="list">
+         <div class="container">
+             <ul>
+                 <li>图片详情</li>
+                 <li>商品参数</li>
+                 <li>配送说明</li>
+                 <li>评论(11)</li>
+             </ul>
+         </div>
+     </div>
+     <div class="std">
+         <div class="container">
+             <div class="std1"></div>
+         </div>
+     </div>
+     <div class="container">
+         <div class="banner">
+         
+        </div>     
+     </div>
+
+     <div class="sidebar">
+            <div class="sidebar_l">
+                <a href="car.html">
+                    <div class="buyCar">
+                    <i></i>
+                    <span>购<br>物<br>车</span>
+                    <b class="nub">0</b>
+                </div>
+                </a>
+
+                <div class="star">
+                    <i></i>
+                </div>
+                <div class="history">
+                    <i></i>
+                </div>
+                <div class="erweima">
+                    <i></i>
+                </div>
+                <div class="kefu">
+                    <i></i>
+                </div>
+                <div class="dingbu">
+                    <i></i>
+                </div>
+            </div>
+        </div>
+
+    <div id="footer"></div>
+
+
+
+        
+     
 </body>
 </html>

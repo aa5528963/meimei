@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-11-13 09:08:45
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-03 10:39:33
+* @Last Modified time: 2018-01-05 10:43:11
 */
 html,body{height: 100%;}
 body,h1,h2,h3,h4,h5,p,a,input,img,ul,li,ol,dl,dt,dd{
@@ -59,4 +59,108 @@ header,footer,section,nav,main,aside,article{
 
 h3,h4{
     font-weight: normal;
+}
+
+.sidebar {
+  width: 314px;
+  min-height: 150px;
+  background: #eee;
+  position: fixed;
+  right: -264px;
+  top: 0;
+  z-index: 99999;
+}
+
+.sidebar .sidebar_l {
+  width: 50px;
+  height: 100%;
+  background: #444;
+}
+
+.sidebar .sidebar_l .buyCar {
+  width: 55px;
+  height: 176px;
+  background: #444;
+  position: relative;
+  left: -5px;
+  top: 80px;
+  box-shadow: -2px 2px 2px #555;
+  padding: 30px 0 0 5px;
+}
+
+.sidebar .sidebar_l .buyCar i {
+  display: block;
+  width: 24px;
+  height: 18px;
+  background: url(../img/sidebar.png) 0 -365px;
+  position: absolute;
+  left: 15px;
+  top: 24px;
+}
+
+.sidebar .sidebar_l .buyCar span, .sidebar .sidebar_l .buyCar b {
+  position: absolute;
+  left: 18px;
+  top: 58px;
+  color: #fff;
+}
+
+.sidebar .sidebar_l .buyCar b {
+  left: 16px;
+  top: 130px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #E6133C;
+  border-radius: 10px;
+}
+
+.sidebar .sidebar_l .star, .sidebar .sidebar_l .history, .sidebar .sidebar_l .erweima, .sidebar .sidebar_l .kefu, .sidebar .sidebar_l .dingbu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.sidebar .sidebar_l .star i, .sidebar .sidebar_l .history i, .sidebar .sidebar_l .erweima i, .sidebar .sidebar_l .kefu i, .sidebar .sidebar_l .dingbu i {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/sidebar.png) 0 337px;
+  position: absolute;
+  left: 6px;
+  top: 10px;
+}
+
+.sidebar .sidebar_l .star {
+  margin-top: 85px;
+}
+
+.sidebar .sidebar_l .history i {
+  background: url(../img/sidebar.png) 0 299px;
+}
+
+.sidebar .sidebar_l .erweima {
+  margin-top: 100px;
+}
+
+.sidebar .sidebar_l .erweima i {
+  background: url(../img/sidebar.png) 0 177px;
+}
+
+.sidebar .sidebar_l .kefu i {
+  background: url(../img/sidebar.png) 0 138px;
+}
+
+.sidebar .sidebar_l .dingbu {
+  display: none;
+}
+
+.sidebar .sidebar_l .dingbu i {
+  background: url(../img/sidebar.png) 0 100px;
+}
+
+.sidebar.right {
+  right: 0;
 }

@@ -25,6 +25,11 @@
   padding-right: 3px;
 }
 
+#main .main_m {
+  position: relative;
+  margin-bottom: 60px;
+}
+
 #main .main_m ul li {
   height: 508.031px;
   width: 23%;
@@ -80,4 +85,16 @@
   vertical-align: middle;
   margin-left: 81px;
   margin-top: 10px;
+}
+
+#main .main_m .page {
+  position: absolute;
+  left: 500px;
+  bottom: -50px;
+  height: 12px;
+}
+
+#main .main_m .page span {
+  border: 1px solid #ccc;
+  padding: 0 12px;
 }

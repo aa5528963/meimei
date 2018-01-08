@@ -17,7 +17,7 @@
     // 获取前端传递的参数
     $pageNo = isset($_GET['pageNo']) ? $_GET['pageNo'] : 1;
     $qty = isset($_GET['qty']) ? $_GET['qty'] : 28;//10
-
+    
   
 
 

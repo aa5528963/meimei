@@ -16,8 +16,8 @@
                     每月累计签到满10次，即可获得5蜜豆
                 </div>
                 <ul>
-                    <li><a href="login.html">登录</a></li>
-                    <li><a href="register.html">注册</a></li>
+                    <li><a href="html/login.html">登录</a></li>
+                    <li><a href="html/register.html">注册</a></li>
                     <li>|</li>
                     <li><i></i>手机app</li>
                     <li><i></i>在线客服</li>
@@ -45,15 +45,26 @@
         </div>  
        
     </div>
+    
     <div id="nav">
         <div class="container">
             <ul>
-                <li>
+                <li class="new">
                     <a href="#">
                         <i></i>
                         商品分类
+                        
                     </a>
-                    
+                    <ul>
+                            <li class="tnub">面膜</li>
+                            <li class="tnub">洁面卸妆</li>
+                            <li class="tnub">水乳/面霜</li>
+                            <li class="tnub">个人护理</li>
+                            <li class="tnub">底妆/修容</li>
+                            <li class="tnub">眼唇彩妆/护理</li>
+                            <li class="tnub">美甲护甲</li>
+                            <li class="tnub">美护工具</li>
+                    </ul>
                 </li>
                 <li><a href="#">主页</a></li>
                 <li><a href="#">礼盒</a></li>
@@ -65,5 +76,117 @@
         </div>
         
     </div>
+
+    <div id="footer">
+        <div class="footer_h">
+            <ul class="clearfix">
+                <li>
+                    <img src="img/h10.png" height="61" width="54" alt="" />
+                    <div>100%正品</div>
+                </li>
+                <li>
+                    <img src="img/h11.png" height="61" width="54" alt="" />
+                    <div>100%正品</div>
+                </li>
+                <li>
+                    <img src="img/h12.png" height="61" width="54" alt="" />
+                    <div>100%正品</div>
+                </li>
+                <li>
+                    <img src="img/h13.png" height="61" width="54" alt="" />
+                    <div>100%正品</div>
+                </li>
+            
+                
+                
+            </ul>
+        </div>
+        <div class="footer_m clearfix">
+            <div class="foot_h">
+                <div class="foot_h1">关于我们</div>
+                <div class="foot_h2">
+                    <img src="img/f1.png" height="40" width="40" alt="" />
+                    <img src="img/f2.png" height="40" width="40" alt="" />
+                    <img src="img/f3.png" height="40" width="40" alt="" />
+
+                </div>
+            </div>
+            <div class="foot_m">
+                <ul>
+                    <li>关于美美箱</li>
+                    <li>美美全球</li>
+                    <li>品牌优势</li>
+                    <li>消费保障</li>
+                </ul>
+                <ul>
+                    <li>帮助中心</li>
+                    <li>常见问题</li>
+                    <li>账户相关</li>
+                    <li>包邮政策</li>
+                    <li>支付相关</li>
+                    <li>物流相关</li>
+                    <li>退换政策</li>
+                </ul>
+                <ul>
+                    <li>服务协议</li>
+                    <li>服务协议</li>
+                    <li>个人网申协议</li>
+                    <li>隐私政策</li>
+                </ul>
+                <ul>
+                    <li>联系我们</li>
+                    <li>商务合作</li>
+                    <li>分销合作</li>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_f">
+            <div class="footer_f1">联系客服</div>
+            <div class="footer_f2">
+                <span>
+                客服时间 : 周一~周五(9:00 - 21:00)      
+                </span>
+                <span>
+                客服热线: 400-720-9967
+                </span>
+                <span>
+                    
+                客服邮箱 :kf@memeboxglobal.com
+            
+                </span>
+            </div>
+            <div class="footer_f3">
+                <div class="footer_f31">
+                        © 2015 Memebox Corporation. All Rights Reserved.
+                </div>
+                <div class="footer_f32">
+                    <i><img src="img/f5.gif" height="47" width="47" alt="" /></i>
+                    <span>
+                        蜜米柏克思（上海）商贸有限公司            上海市杨浦区政立路415号中航天盛广场A座6楼
+                        沪ICP备14043341号
+                    </span>
+        
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var data = ['贴片式面膜','免洗面膜','水洗面膜','斯拉面膜','其他'];
+            var tr = $('<tr/>')
+          var $p = $.map(data,function(item,idx){
+
+                    return  `<li>${item}</li>`
+
+
+
+            )}.join(''); 
+
+          $tr.append($p);
+          $('.tnub').append($tr);
+    </script>
 </body>
 </html>

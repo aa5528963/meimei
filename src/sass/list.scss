@@ -28,6 +28,8 @@
     }
 
     .main_m{
+        position:relative;
+        margin-bottom: 60px;
         ul{
             
             li{
@@ -90,6 +92,21 @@
                             margin-top: 10px;
                     }
             }
+        }
+
+        .page{
+           
+            position:absolute;
+            left:500px;
+            bottom:-50px;
+            height: 12px;
+            span{
+                
+                border:1px solid #ccc;
+                padding:0 12px;
+            }
+
+
         }
     }
 }

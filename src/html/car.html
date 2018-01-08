@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/car.css" />
+    <link rel="stylesheet" type="text/css" href="../css/head.css" />
+    <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../js/car.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+
+    <script type="text/javascript">
+            jQuery(function($){
+            $('#header').load('head1.html #header');
+            
+            $('#footer').load('head1.html #footer');
+
+            
+            });
+
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="top" class="clearfix">
+        <div class="container">
+            <div class="top_h">
+             <h1><img src="../img/l1.png"  alt="" /></h1>
+            </div>
+            <div class="top_m">
+                <ul>
+                    <li>
+                        <span>1</span>
+                        <div>购物车</div>
+                    </li>
+                     <li>
+                        <span>2</span>
+                        <div>提交订单</div>
+                    </li>
+                     <li>
+                        <span>3</span>
+                        <div>选择支付</div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div id="cart">
+    <div class="container">
+        <table>
+            <thead class="thead">
+                <tr>
+                    <th>商品信息</th>
+                    <th>规格</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>金额</th>
+                    <th>操作</th>
+                    
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+            <tfoot class="tfoot">
+                <tr>
+                    <td colspan="7">
+                        <div>
+                            本仓总计:
+                            <span></span>
+                            <span>(优惠:0.00)</span>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="sumcart">
+            <div class="sumcart_h"><i></i>删除</div>
+            <div class="sumcart_m"><i></i>清空失效的商品</div>
+            <div class="sumcart_f">
+                <div>
+                    <span>总计</span>
+                    <span>￥</span>
+                    <span>(不含运费)</span>
+                </div>
+                <a href="#">去结算</a>
+            </div>
+        </div>
+    </div>
+        
+      
+        <!-- <div class="size">
+            <i></i>
+            <span>跨境商品</span>
+            <span>满399包邮</span>
+        </div> -->
+
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
