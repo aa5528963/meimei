@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-01-03 15:52:45
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-03 21:05:16
+* @Last Modified time: 2018-01-08 14:12:23
 */
 
 jQuery(function($){
@@ -33,7 +33,7 @@ jQuery(function($){
                               $div.append($span);
                          }
                          $('.main_m').append($div);
-
+// --------------------------------------传送id
                         $('.main_m').on('click','img',function(e){
                             var target = e.target;
                             var id = target.getAttribute('title');
@@ -42,7 +42,7 @@ jQuery(function($){
                                         //通过地址传id
                             location.href = './detail.html' + params;
                         })
-
+// -----------------------------------分页效果
                          $('.page').on('click','span',function(e){
                                 var target = e.target;
                                 pageNo = target.innerText*1;
@@ -71,7 +71,10 @@ jQuery(function($){
 
             });
 
-
+        $('#header').load('head1.html #header');
+        $('#header_m').load('head1.html .header_m');
+        $('#nav').load('head1.html #nav');
+        $('#footer').load('head1.html #footer');
 
 
 

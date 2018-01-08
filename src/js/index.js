@@ -2,11 +2,11 @@
 * @Author: Marte
 * @Date:   2018-01-02 16:46:46
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-06 12:09:26
+* @Last Modified time: 2018-01-08 11:54:54
 */
 
 jQuery(function($){
-
+// --------------------请求数据
      $.ajax({
           // D:\1706\superiorHui\src\api
             url:'api/index.php',
@@ -30,9 +30,9 @@ jQuery(function($){
                             </li>`
                 }).join('');   
                 $s.append($p);
-                
+// --------------------------热门商品栏的动画效果                
                $('.guess_m').append($s);
-            var r = 0;
+                var r = 0;
                $('.button_r').on('click',function(){
                     
                     r-=293;
@@ -53,7 +53,7 @@ jQuery(function($){
         })
 
 
-        
+ // --------------------------商品列表生成       
      $.ajax({
           // D:\1706\superiorHui\src\api
             url:'api/index1.php',

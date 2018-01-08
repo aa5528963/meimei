@@ -2,15 +2,15 @@
 * @Author: Marte
 * @Date:   2018-01-04 10:16:20
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-01-06 17:22:42
+* @Last Modified time: 2018-01-08 11:53:02
 */
 
 jQuery(function($){
-
+// -------------------拆分url传过来的id
         var params = location.search;
         
         var yz_arr = params.slice(1).split('=');
-        // console.log(yz_arr);
+        
        
         var id ;
         yz_arr.forEach(function(item){
@@ -21,9 +21,9 @@ jQuery(function($){
             id = arr[0];
           };
           console.log(id);
-        })
+         })
 
-
+// --------------------------请求获取所需的数据
         $.ajax({
                 url:'../api/detail.php',
                 data:{'id':id},
@@ -43,7 +43,7 @@ jQuery(function($){
                      $('.price1').html(`￥${r.oprice}`);
                      $('.price2').html(`￥${r.nprice}`);
 
-
+// ------------------点击加入购物车把数据存入数据库
 
                      $goodslist.on('click',function(){
                         document.cookie = `id1=${id}`; 
@@ -66,12 +66,12 @@ jQuery(function($){
                         
 
                         
-                    })
+                     })
 
 
                 }
         })
-
+// -----------------------------商品数量
         var i =1;
         $('.q1').on('click',function(){
             
@@ -88,6 +88,8 @@ jQuery(function($){
             i++;
             $('.nub').val(i);
         })
+
+// ----------------------------固定侧边栏
         var $sidebar = $('.sidebar');
         $sidebar.height($(window).innerHeight());
         $(window).resize(function(){
@@ -95,7 +97,7 @@ jQuery(function($){
         });
 
     //鼠标移入移出时高亮
-    $sidebar.on('mouseover','.sidebar_l>div',function(){
+        $sidebar.on('mouseover','.sidebar_l>div',function(){
             $(this).css('backgroundColor','#E6133C');
         });
         $sidebar.on('mouseout','.sidebar_l>div',function(){
@@ -103,11 +105,7 @@ jQuery(function($){
         });
 
 
-    document.cookie = `id1=${id}`;
-
-
-    
-        console.log(id);
+ // --------------------------飞入购物车效果
    
 
      $goodslist = $('.button2');

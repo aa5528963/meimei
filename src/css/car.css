@@ -225,4 +225,37 @@
   float: left;
   position: absolute;
   right: 10px;
+  top: 0;
+}
+
+#cart .sumcart .sumcart_f div {
+  float: left;
+}
+
+#cart .sumcart .sumcart_f div span:nth-child(1) {
+  color: #666;
+}
+
+#cart .sumcart .sumcart_f div span:nth-child(2) {
+  color: #ff5073;
+  display: inline-block;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+#cart .sumcart .sumcart_f div span:nth-child(3) {
+  color: #ccc;
+  padding-left: 3px;
+}
+
+#cart .sumcart .sumcart_f a {
+  float: left;
+  width: 180px;
+  padding: 10px 10px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff5073;
 }

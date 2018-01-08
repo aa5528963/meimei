@@ -220,10 +220,16 @@
                         line-height: 24px;
                         color:#fff;
 
+
                         &:nth-child(1){
                             background: rgba(3, 3, 3, .5);
                             margin-top:10px;
                         }
+                    }
+
+                    li:hover{
+                        background: #fff;
+                        color:pink;
                     }
                 }
             }
